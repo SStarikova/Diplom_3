@@ -1,8 +1,12 @@
 # Дипломная работа
 
-На проекте используются следующие технологии: Java 11, JUnit 4.13.2, Maven 3.9.9, Allure 2.29.0, Aspectj 1.9.7, Webdriver 5.9.2, Selenium 4.18.1
+На проекте используются следующие технологии: Java 11, JUnit 4.13.2, Maven 3.9.9, Allure 2.29.0, Aspectj 1.9.7, Webdriver 5.9.2, Selenium 4.18.1, Rest assured 5.3.0
 
-Для очистки и запуска тестов необходимо вызвать команду `mvn clean test`
+Для очистки и запуска тестов необходимо вызвать команду:
+- `mvn clean test` - для Google Chrome
+- `mvn clean test -Dbrowser=yandex` - для Яндекс браузер
+  
+Так же для открытия Яндекс браузера необходимо в BaseTest поменять путь до своего браузера и возможно изменить версию браузера, можно узнать свою по ссылке browser://version/, и найти подходящую версию [здесь](https://github.com/GoogleChromeLabs/chrome-for-testing?tab=readme-ov-file#json-api-endpoints).
 
 # Задание 3: веб-приложение
 В последнем задании тебе нужно протестировать [веб-приложение Stellar Burgers](https://stellarburgers.nomoreparties.site/). 
